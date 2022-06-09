@@ -32,4 +32,5 @@ pdfs = "yes"
 scrdir = 'C:/data/code/pubmed_stuff'
 inargs =  ' -query ' + query + ' -maxr ' + maxr + ' -pdfs ' + pdfs
 
+
 runfile('C:/data/code/pubmed_stuff/pubmed_search.py', wdir=scrdir, args=inargs)
