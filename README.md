@@ -1,10 +1,11 @@
 # pubmed_search
-quick script to download metadata and pdfs from a pubmed search
+quick python script to download metadata and pdfs from a pubmed search
 
 
 
 
 # requires 
+python 3.7+
 pymed 
 fetch_pdfs
 habanero 
