@@ -16,8 +16,11 @@ lxml
 
 
 Pymed can be downloaded from link below and installed manually.
+
 https://github.com/gijswobben/pymed
+
 fetch_pdfs can be downloaded via 
+
 https://github.com/billgreenwald/Pubmed-Batch-Download
 
 
@@ -27,9 +30,13 @@ https://github.com/billgreenwald/Pubmed-Batch-Download
 # example
 
 query = '"dlpfc parietal"'
+
 maxr = "50"
+
 pdfs = "yes"
+
 scrdir = 'C:/data/code/pubmed_stuff'
+
 inargs =  ' -query ' + query + ' -maxr ' + maxr + ' -pdfs ' + pdfs
 
 
