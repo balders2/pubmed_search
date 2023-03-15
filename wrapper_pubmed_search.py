@@ -30,13 +30,35 @@ Created on Thu Jun  9 14:01:48 2022
 # so that the parser can deal with the spaces 
 # in the string
 
+#query = '"parietal tms"'
+#query = '"IPS tms"'
+#query = '"IPS tms anxiety"'
+#query = '"parietal tms anxiety"'
 
-query = '"dlpfc parietal"'
-maxr = "50"
-pdfs = "yes"
-scrdir = 'C:/data/code/pubmed_stuff'
+#query = '"parietal TBS"'
+#query = '"IPS tbs"'
+#query = '"IPS tbs anxiety"'
+#query = '"parietal tbs anxiety"'
+
+#query = '"parietal rtms"'
+#query = '"IPS rtms"'
+#query = '"IPS rtms anxiety"'
 
 
-inargs =  ' -query ' + query + ' -maxr ' + maxr + ' -pdfs ' + pdfs
+#queries = np.array(['"ips working memory"', '"ips attention"', '"ips arousal"', '"parietal arousal"'], dtype=object)
+queries = np.array(['"tbs ptsd"', '"tbs insomnia"'], dtype=object)
 
-runfile('C:/data/code/pubmed_stuff/pubmed_search.py', wdir=scrdir, args=inargs)
+
+for q in queries:
+    
+    
+    query = q
+    
+    maxr = "500"
+    pdfs = "yes"
+    scrdir = 'C:/data/code/pubmed_stuff'
+    
+    
+    inargs =  ' -query ' + query + ' -maxr ' + maxr + ' -pdfs ' + pdfs
+    
+    runfile('C:/data/code/pubmed_stuff/pubmed_search.py', wdir=scrdir, args=inargs)
